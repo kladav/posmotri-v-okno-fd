@@ -83,7 +83,7 @@ ol {
 
 /* настройки поиска и фильтрации контента */
 
-.search-form { 
+.search-form {
   display: flex;
   justify-content: space-between;
 }
@@ -190,6 +190,10 @@ input[type="checkbox"]:active + .search-form__pseudo-checkbox::after {
   outline-offset: 1px;
 }
 
+.button:not(:focus-visible) {
+  outline: 0;
+}
+
 .button:hover {
   text-decoration: underline;
 }
@@ -204,7 +208,7 @@ input[type="checkbox"]:active + .search-form__pseudo-checkbox::after {
   width: 194px;
 }
 
-.more-button {  
+.more-button {
   margin-top: 0;
   margin-bottom: 2px;
   width: 100%;
@@ -218,7 +222,7 @@ input[type="checkbox"]:active + .search-form__pseudo-checkbox::after {
 
 .title {
   margin-bottom: 26px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 94%;
@@ -267,7 +271,7 @@ input[type="checkbox"]:active + .search-form__pseudo-checkbox::after {
   padding-top: 6px;
   margin-bottom: 6px;
   overflow: hidden;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
   font-size: 30px;
   line-height: 100%;
@@ -279,6 +283,10 @@ input[type="checkbox"]:active + .search-form__pseudo-checkbox::after {
   font-weight: 400;
   font-size: 18px;
   line-height: 90%;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   text-overflow: ellipsis;
 }
 
